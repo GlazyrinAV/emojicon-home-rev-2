@@ -61,6 +61,9 @@ public class RootFrame extends AbstractFrame {
         return this;
     }
 
+    public Screen getScreen() {
+        return screen;
+    }
     public void setTransparentColorFn(BiFunction<Integer, Integer, TextColor> transparentColorFn) {
         this.transparentColorFn = transparentColorFn;
     }
