@@ -32,7 +32,9 @@ public class RootFrame extends AbstractFrame {
         setPosY(y);
     }
 
-
+    public static RootFrame extend(Frame frame) {
+        return (RootFrame) frame.getRoot();
+    }
 
     //paint it with background color
     public Point paint(){
